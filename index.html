@@ -52,70 +52,12 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title"><p style="color:rgb(236, 158, 14);font-family:Lucida Handwriting, cursive">Foundation Cures Personalization:</p><p style="color:rgb(58, 57, 56);font-family:Times New Roman, Serif;font-size:2vw"> Improving Personalized Models' Prompt Consistency via Hidden Foundation Knowledge</p></h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
+                <a>Anonymous Submission</a><sup>*</sup></span>
                   </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -129,11 +71,11 @@
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        <source src="static/videos/teaser-video.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        
       </h2>
     </div>
   </div>
@@ -145,10 +87,10 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-3"><p style="font-size:2vw">Overview</p></h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Facial personalization models fail to control facial attributes accurately. FreeCure proposed in this paper fixes this problem with a training-free framework. FreeCure can be seamlessly integrated into a wide range of baselines (those built upon both Stable Diffusion and FLUX), dealing with various facial attributes and without damaging their impressive ability of identity preservation.
           </p>
         </div>
       </div>
@@ -157,40 +99,148 @@
 </section>
 <!-- End paper abstract -->
 
+<!-- Motivation & Method-->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <div class="columns is-centered has-text-centered">
+      <h2 class="title is-3"><p style="font-size:2vw">Motivation and Method</p></h2>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <img src="./static/images/motivation.jpg" alt="Italian Trulli">
+          <div class="content has-text-justified">
+            <p>
+            We analyze the challenges current methods face in achieving precise control over facial features. The key issue lies in how personalization models process identity data: their cross-attention layers focus too much on identity-related tokens while undermining those corresponding to facial attributes (e.g., hairstyle, expression, see the left part). Consequently, these attributes become difficult to manipulate. However, these cross-attention layers (or adapters) are critical for preserving identity accuracy in the generated output, making them resistant to modification. Adjusting the cross-attention maps frequently leads to the loss of essential identity characteristics (see the right parts).
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <img src="./static/images/method.jpg" alt="Italian Trulli">
+          <div class="content has-text-justified">
+            <p>
+              While keeping cross-attention modules intact, we propose a novel foundation-aware self-attention (FASA), enabling attributes with high prompt consistency to replace those that are ill-aligned during personalization generation. To protect the identity unharmed, this strategy also leverages semantic segmentation models to generate the scaling masks of these attributes, therefore making such replacement happen in a highly localized and harmonious manner. Furthermore, we use a simple but effective approach called asymmetric prompt guidance (APG) to restore abstract attributes such as expression. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Motivation & Method -->
+
+<!-- result gallery -->
+<h2 class="title is-3;columns is-centered has-text-centered"><p style="font-size:2vw">Results</p></h2>
+
+<!-- baselines -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="subtitle has-text-centered">
+        Different Baselines (Including SDv1.5, SDXL and FLUX)
+      </h2>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/baseline1.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Baselines based on Stable-Diffusion-v1.5 (FastComposer, Face-Diffuser, Face2Diffusion)
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/baseline2.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Baselines based on Stable-Diffusion-XL (InstantID, PhotoMaker, PuLID)
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/baseline3.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Baselines based on FLUX.1-dev (PuLID, InfiniteYou)
+       </h2>
+     </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End baseline carousel -->
 
 <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
+      <h2 class="subtitle has-text-centered">
+        Different Datasets (CelebA-HQ and self-curated data)
+      </h2>
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/celeb-1.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          Celebrities (from CelebA-HQ)
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/celeb-2.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+          Celebrities (from CelebA-HQ)
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/non-celeb-1.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-         Third image description.
+          Non-celebrities (self-curated data)
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/non-celeb-2.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Non-celebrities (self-curated data)
+        </h2>
+      </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="subtitle has-text-centered">
+        Different Facial Attributes (e.g. hair style, expression, accessories, eye color)
+      </h2>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/attr1.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          1. Hair styles
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/attr2.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          2. Accessories
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/attr3.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         3. Expressions
        </h2>
      </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
   </div>
 </div>
 </div>
@@ -199,89 +249,56 @@
 
 
 
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
+<!-- End image carousel -->
+<section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+      <h2 class="title is-3"><p style="font-size:2vw">Analysis</p></h2>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        1. Multiple-attribute Prompt Consistency
+      </h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <img src="./static/images/analysis-0.png" alt="Italian Trulli">
+          <div class="content has-text-justified">
+            <p>
+              We validate that the subsequent enhancement processes of FreeCure do not impact attributes that have already been enhanced. The figure visualizes the intermediate results at FreeCure's different stages. When APG is used in the latter stages, attributes previously enhanced through FASA remain unaffected. This illustrates that FreeCure's improvement across multiple attributes is highly robust and consistent.
+            </p>
+          </div>
+        </div>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        2. Different Initial Noise
+      </h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <img src="./static/images/analysis-1.png" alt="Italian Trulli">
+          <div class="content has-text-justified">
+            <p>
+              We observe that, with identical initial noise, all baselines' FD and PD processes generate faces with similar attribute locations. It is important to validate that FASA's robust performance without these condition. Thus, we relax this condition and regenerate faces with different initial noises. This figure shows that results under the two settings are comparable, which confirms that FASA can effectively enhance the generated results of PD, even when its FD counterpart produces faces with variable spatial structures.
+            </p>
+          </div>
+        </div>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        3. Visualization of FASA Modules
+      </h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <img src="./static/images/analysis-2.png" alt="Italian Trulli">
+          <div class="content has-text-justified">
+            <p>
+              FASA effectively captures and faithfully transfers information of attributes localized in small areas (e.g. eyes, pearl earrings). Furthermore, in regions unrelated to the target attributes, FASA maintains a strong alignment with the original PD attention maps, demonstrating that it preserves the core functionality of the personalization models.
+            </p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
 
 
   <footer class="footer">
